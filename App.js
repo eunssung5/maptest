@@ -2,11 +2,11 @@ import 'react-native-gesture-handler';
 
 // Import React and Component
 import React from 'react';
-
 // Import Navigators from React Navigation
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-
+import AppleMap from './Screen/AppleMap';
+// import GoogleMap from './Screen/GoogleMap';
 // Import Screens
 import SplashScreen from './Screen/SplashScreen';
 import LoginScreen from './Screen/LoginScreen';
@@ -42,7 +42,7 @@ const Auth = () => {
   );
 };
 
-const App = () => {
+var App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="SplashScreen">
